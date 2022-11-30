@@ -93,5 +93,13 @@ export default function Home() {
         abi,
         provider
       );
+   // call the numAddressesWhitelisted from the contract
+   const _numberOfWhitelisted =
+   await whitelistContract.numAddressesWhitelisted();
+ setNumberOfWhitelisted(_numberOfWhitelisted);
+} catch (err) {
+ console.error(err);
+}
+};
 
 
