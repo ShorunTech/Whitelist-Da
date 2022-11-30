@@ -78,5 +78,20 @@ export default function Home() {
           }
         };
       
+        /**
+   * getNumberOfWhitelisted:  gets the number of whitelisted addresses
+   */
+  const getNumberOfWhitelisted = async () => {
+    try {
+      // Get the provider from web3Modal, which in our case is MetaMask
+      // No need for the Signer here, as we are only reading state from the blockchain
+      const provider = await getProviderOrSigner();
+      // We connect to the Contract using a Provider, so we will only
+      // have read-only access to the Contract
+      const whitelistContract = new Contract(
+        WHITELIST_CONTRACT_ADDRESS,
+        abi,
+        provider
+      );
 
 
