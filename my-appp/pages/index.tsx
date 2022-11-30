@@ -64,6 +64,19 @@ export default function Home() {
         abi,
         signer
       );
+            // call the addAddressToWhitelist from the contract
+            const tx = await whitelistContract.addAddressToWhitelist();
+            setLoading(true);
+            // wait for the transaction to get mined
+            await tx.wait();
+            setLoading(false);
+            // get the updated number of addresses in the whitelist
+            await getNumberOfWhitelisted();
+            setJoinedWhitelist(true);
+          } catch (err) {
+            console.error(err);
+          }
+        };
       
 
 
