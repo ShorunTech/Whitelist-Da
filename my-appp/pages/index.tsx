@@ -42,4 +42,17 @@ export default function Home() {
       window.alert("Change the network to Goerli");
       throw new Error("Change network to Goerli");
     }
+    if (needSigner) {
+      const signer = web3Provider.getSigner();
+      return signer;
+    }
+    return web3Provider;
+  };
+
+  /**
+   * addAddressToWhitelist: Adds the current connected address to the whitelist
+   */
+
+  
+
 
