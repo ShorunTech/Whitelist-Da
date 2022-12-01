@@ -112,4 +112,8 @@ export default function Home() {
    * needing to make a digital signature to authorize the transaction being sent. Metamask exposes a Signer API to allow your website to
    * request signatures from the user using Signer functions.
    *
+   * @param {*} needSigner - True if you need the signer, default false otherwise
+   */
 
+
+  
