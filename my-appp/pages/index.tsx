@@ -153,3 +153,16 @@ export default function Home() {
       if (_presaleStarted) {
         checkIfPresaleEnded();
       }
+     
+      getTokenIdsMinted();
+
+      // Set an interval which gets called every 5 seconds to check presale has ended
+      const presaleEndedInterval = setInterval(async function () {
+        const _presaleStarted = await checkIfPresaleStarted();
+        if (_presaleStarted) {
+          const _presaleEnded = await checkIfPresaleEnded();
+          if (_presaleEnded) {
+            clearInterval(presaleEndedInterval);
+          }
+        }
+      }, 5 * 1000);
