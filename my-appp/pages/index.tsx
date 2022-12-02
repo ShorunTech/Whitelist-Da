@@ -167,4 +167,9 @@ export default function Home() {
           <div className={styles.description}>
             {numberOfWhitelisted} have already joined the Whitelist
           </div>
-          
+          {renderButton()}
+        </div>
+        <div>
+          <img className={styles.image} src="./crypto-devs.svg" />
+        </div>
+      </div>
