@@ -11,3 +11,11 @@ export const abi = [
         "stateMutability": "nonpayable",
         "type": "constructor"
       },
+      {
+        "inputs": [],
+        "name": "addAddressToWhitelist",
+        "outputs": [],
+        "stateMutability": "nonpayable",
+        "type": "function"
+      },
+      
