@@ -31,3 +31,14 @@ export const abi = [
         "stateMutability": "view",
         "type": "function"
       },
+      {
+        "inputs": [],
+        "name": "numAddressesWhitelisted",
+        "outputs": [
+          {
+            "internalType": "uint8",
+            "name": "",
+            "type": "uint8"
+          }
+        ],
+        
