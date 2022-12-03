@@ -44,4 +44,12 @@ export const abi = [
         "stateMutability": "view",
         "type": "function"
       },
-      
+      {
+        "inputs": [
+          {
+            "internalType": "address",
+            "name": "",
+            "type": "address"
+          }
+        ],
+        
