@@ -18,4 +18,13 @@ export const abi = [
         "stateMutability": "nonpayable",
         "type": "function"
       },
-      
+      {
+        "inputs": [],
+        "name": "maxWhitelistedAddresses",
+        "outputs": [
+          {
+            "internalType": "uint8",
+            "name": "",
+            "type": "uint8"
+          }
+        ],
