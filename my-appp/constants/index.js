@@ -41,4 +41,7 @@ export const abi = [
             "type": "uint8"
           }
         ],
-        
+        "stateMutability": "view",
+        "type": "function"
+      },
+      
