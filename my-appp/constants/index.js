@@ -52,4 +52,12 @@ export const abi = [
             "type": "address"
           }
         ],
+        "name": "whitelistedAddresses",
+        "outputs": [
+          {
+            "internalType": "bool",
+            "name": "",
+            "type": "bool"
+          }
+        ],
         
